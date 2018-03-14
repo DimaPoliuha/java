@@ -16,13 +16,13 @@ public class Controller {
     // «p.oow123_woop»
     public static final String REGEX_NICKNAME = "^[A-Za-z0-9_.]{2,14}$";
     // «petya_ivanov1986»
-    public static final String REGEX_SKYPE = "^[A-Za-z0-9_]{2,14}$";
+    public static final String REGEX_SKYPE = "^[A-Za-z0-9_]{3,25}$";
     // «04012»
     public static final String REGEX_INDEX = "^[0-9]{5}$";
     // «Kyiv»
     public static final String REGEX_CITY = "^[A-Z0-9]{1}[A-Za-z0-9-. ]{1,20}$";
     // «st. Mezhihirska»
-    public static final String REGEX_STREET = "^[A-Z]{1}[A-Za-z0-9-. ]{1,20}$";
+    public static final String REGEX_STREET = "^[A-Za-z0-9-. ]{1,40}$";
     // «12/3A»
     public static final String REGEX_HOUSE_NUMBER = "^[0-9]{1,3}[/]?[0-9]{0,2}[A-Za-z]?$";
     // «35»
@@ -70,6 +70,8 @@ public class Controller {
         view.printMessageAndString(view.OUR_STREET, model.getStreet());
         view.printMessageAndString(view.OUR_HOUSE_NUMBER, model.getHouseNumber());
         view.printMessageAndString(view.OUR_FLAT_NUMBER, model.getFletNumber());
+        view.printMessageAndString(view.OUR_REGISTRATION_DATE, model.getRegistrationDate());
+        view.printMessageAndString(view.OUR_DATE_OF_CHANGE, model.getDateOfChange());
     }
 
     // The Utility methods
