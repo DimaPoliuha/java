@@ -14,4 +14,23 @@ public class Adress {
         this.fletNumber = fletNumber;
     }
 
+    public String getIndex() {
+        return index;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getHouseNumber() {
+        return houseNumber;
+    }
+
+    public String getFletNumber() {
+        return fletNumber;
+    }
 }
